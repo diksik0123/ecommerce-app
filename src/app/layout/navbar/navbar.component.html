@@ -1,0 +1,73 @@
+<nav>
+  <div class="bg-[var(--surface)]">
+
+    <div class="flex items-center p-5 h-20">
+      <div class="hidden lg:flex items-center flex justify-around w-full">
+        <img src="logo.svg" alt="Logo" class="w-15 h-15">
+
+        <div class="w-full max-w-lg min-w-lg">
+          <div class="relative flex items-center">
+            <div class="absolute w-5 h-5 top-1.5 left-2.5 text[var(--text-primary)]">
+              <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+            </div>
+        
+            <input
+            class="w-full bg-transparent placeholder:text-[var(--text-primary)] text-[var(--text-primary)] text-sm border border-[var(--border)] rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-[var(--secondary)] hover:border-[var(--secondary)] shadow-sm focus:shadow"
+            placeholder="Search...." 
+            />
+          </div>
+        </div>
+        <div class="flex justify-end gap-10">
+          <div>
+            <a href="javascript:void(0)" [routerLink]="['/wishlist']">
+              <fa-icon [icon]="faHeart" class="text-lg hover:text-[var(--secondary)]"></fa-icon>
+            </a>
+          </div>
+          <div>
+            <a [routerLink]="['/cart']">        
+              <fa-icon [icon]="faCartShopping" class="text-lg hover:text-[var(--secondary)]"></fa-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile menu button-->
+      <div class="lg:hidden">
+        <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-white/5 hover:text-white focus:outline-2 focus:-outline-offset-1 focus:outline-[var(--secondary)]" (click)="mobileMenuOpen = !mobileMenuOpen">
+          <span class="sr-only">Open main menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile menu dropdown -->
+    <div id="mobile-menu" class="block lg:hidden" [class.hidden]="!mobileMenuOpen" >
+
+      <div class="space-y-1 px-2 pt-2 pb-3">
+
+        <div class="w-full max-w-sm">
+          <div class="relative flex items-center">
+            <div class="absolute w-5 h-5 top-1.5 left-2.5 text[var(--text-primary)]">
+              <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+            </div>
+            <input
+            class="w-full bg-transparent placeholder:text-[var(--text-primary)] text-[var(--text-primary)] text-sm border border-[var(--border)] rounded-md pl-10 pr-3 py-2 transition duration-300 ease focus:outline-none focus:border-[var(--secondary)] hover:border-[var(--secondary)] shadow-sm focus:shadow"
+            placeholder="Search...." 
+            />
+          </div>
+        </div>
+
+        <a href="javascript:void(0)" [routerLink]="['/wishlist']" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-[var(--secondary)]">Wishlist</a>
+        <a href="javascript:void(0)" [routerLink]="['/cart']" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:text-[var(--secondary)]">Cart</a>
+
+      </div>
+    </div>
+
+  </div>
+</nav>

@@ -1,0 +1,22 @@
+@import 'tailwindcss';/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --primary-bg-color:  #0f172a;
+  --surface: #1e293b;
+  --border:   #334155;
+
+  --primary: #22d3ee;
+  --secondary: #a855f7;
+  --accent:  #f97316;
+
+  --text-primary: #f8fafc;
+  --text-muted:  #94a3b8;
+  --success: #22c55e;
+  --danger: #ef4444
+}
+
+html, body{
+  background-color: var(--primary-bg-color);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+}

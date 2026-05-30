@@ -1,0 +1,26 @@
+<footer class="hidden lg:flex fixed bottom-0 left-0 w-full border-t border-[var(--border)] bg-[var(--surface)]">
+  <div class="flex justify-around items-center max-h-lg w-full py-2">
+    <div class="flex flex-col items-center gap-5">
+      <p class="font-semibold">Links</p>
+      <a href="javascript:void(0)" [routerLink]="['/wishlist']" class="hover:text-[var(--secondary)]">
+        Wishlist
+      </a>
+      <a href="javascript:void(0)" [routerLink]="['/cart']" class="hover:text-[var(--secondary)]"> 
+        Cart       
+      </a>
+    </div>
+
+    <!-- Socials -->
+    <div class="flex flex-col items-center gap-5">
+      <p class="font-semibold">Socials</p>
+      <a href="#" class="hover:text-[var(--secondary)]">GitHub</a>
+      <a href="#" class="hover:text-[var(--secondary)]">LinkedIn</a>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center gap-5">
+      <p>© 2026 Your Name</p>
+      <p class="text-xs opacity-70">Built with Angular</p>
+    </div>
+  </div>
+</footer>
