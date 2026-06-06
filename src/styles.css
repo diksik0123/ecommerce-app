@@ -19,4 +19,10 @@ html, body{
   background-color: var(--primary-bg-color);
   color: var(--text-primary);
   font-family: "Inter", sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow-y: auto;
 }
