@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Mechanical Keyboard",
+    "description": "RGB mechanical keyboard with blue switches.",
+    "price": "$120",
+    "image": "https://placehold.co/400x300?text=Keyboard"
+  },
+  {
+    "id": 2,
+    "name": "Gaming Mouse",
+    "description": "High precision wireless gaming mouse.",
+    "price": "$80",
+    "image": "https://placehold.co/400x300?text=Mouse"
+  },
+  {
+    "id": 3,
+    "name": "27-inch Gaming Monitor",
+    "description": "27-inch IPS monitor with 144Hz refresh rate.",
+    "price": "$250",
+    "image": "https://placehold.co/400x300?text=Monitor"
+  },
+  {
+    "id": 4,
+    "name": "Wireless Headset",
+    "description": "Surround sound gaming headset with noise cancellation.",
+    "price": "$150",
+    "image": "https://placehold.co/400x300?text=Headset"
+  },
+  {
+    "id": 5,
+    "name": "Gaming Laptop",
+    "description": "RTX-powered gaming laptop with 16GB RAM and 1TB SSD.",
+    "price": "$1499",
+    "image": "https://placehold.co/400x300?text=Laptop"
+  },
+  {
+    "id": 6,
+    "name": "USB-C Docking Station",
+    "description": "Expand your workspace with HDMI, USB, and Ethernet ports.",
+    "price": "$99",
+    "image": "https://placehold.co/400x300?text=Dock"
+  },
+  {
+    "id": 7,
+    "name": "Portable SSD 1TB",
+    "description": "High-speed external SSD with USB 3.2 connectivity.",
+    "price": "$180",
+    "image": "https://placehold.co/400x300?text=SSD"
+  },
+  {
+    "id": 8,
+    "name": "1080p Webcam",
+    "description": "Full HD webcam with autofocus and built-in microphone.",
+    "price": "$70",
+    "image": "https://placehold.co/400x300?text=Webcam"
+  }
+]

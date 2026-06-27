@@ -1,5 +1,35 @@
 <section class="p-10">
   <h1 class="text-5xl font-bold">Featured Products</h1>
 
-  <p>featured-collection works!</p>
+  <div class="mt-10 grid grid-cols-1 gap-15 md:grid-cols-2 lg:grid-cols-4">
+    @for (product of products; track product.id) {
+      <div class="max-w-sm overflow-hidden rounded bg-[var(--surface)] shadow-lg">
+        <img
+          class="w-full"
+          [src]="product.image"
+          [alt]="product.name">
+
+        <div class="px-6 py-4">
+          <div class="mb-2 text-xl font-bold">
+            {{ product.name }}
+          </div>
+
+          <p class="text-base text-[var(--text-muted)]">
+            {{ product.description }}
+          </p>
+        </div>
+
+        <div class="px-6 pt-4 pb-2">
+          <span
+            class="inline-block rounded-full bg-[var(--primary)] px-3 py-1 text-sm font-semibold text-black">
+            {{ product.price }}
+          </span>
+        </div>
+      </div>
+    } @empty {
+      <p class="text-[var(--text-muted)]">
+        No products available.
+      </p>
+    }
+  </div>
 </section>
